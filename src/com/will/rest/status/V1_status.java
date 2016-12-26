@@ -3,6 +3,18 @@ package com.will.rest.status;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
+/**
+ * This is the root path for our restful api service
+ * In the web.xml file, we specified that /api/* need to be in the URL to
+ * get to this class.
+ * 
+ * We are versioning the class in the URL path.  This is the first version v1.
+ * Example how to get to the root of this api resource:
+ * http://localhost:8080/com.will.rest/api/v1/status
+ * 
+ * @author 308tube
+ *
+ */
 @Path("/v1/status")
 public class V1_status {
 	
